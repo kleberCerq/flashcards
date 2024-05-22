@@ -20,10 +20,7 @@ body {
 #input-container {
   display: block;
   background-color: #ffffff;
-  width: 35vw;
-  height: 40vh;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px 1px;
 }
 
 form {
@@ -35,17 +32,23 @@ form {
 }
 
 label {
-  margin: 10px;
+  margin: 15px 15px 5px 15px;
 }
 
 textarea {
-  margin: 10px;
+  margin: 5px 15px 15px 15px;
   border-radius: 10px;
-  height: 50%;
+  height: 20vh;
+  width: 25vw;
 }
 
 #send-btn {
-  margin: 10px;
-  padding: 5px;
+  cursor: pointer;
+  margin: 10px 15px 10px 130px;
+  padding: 6px;
   border-radius: 10px;
+  border: none;
+  background-color: #00ff00;
+  font-size: 16px;
+  width: 140px;
 }
