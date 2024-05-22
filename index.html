@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
     <title>Flashcards</title>
   </head>
   <body>
+    <button id="click-btn">CLICK ME!</button>
+    <div id="input-container">
+      <form action="/submit" method="post">
+        <label for="card-front">Frente do cartão:</label>
+        <textarea name="card-front" id="card-front" required></textarea>
+        <label for="card-back">Verso do cartão:</label>
+        <textarea name="card-back" id="card-back"></textarea>
+        <button type="submit" id="send-btn">Criar cartão</button>
+      </form>
+    </div>
     <script src="/src/js/script.js"></script>
   </body>
 </html>
