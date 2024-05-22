@@ -11,14 +11,13 @@ body {
 }
 
 #click-btn {
-  display: none;
   cursor: pointer;
   padding: 5px;
   font-size: 20px;
 }
 
 #input-container {
-  display: block;
+  display: none;
   background-color: #ffffff;
   border-radius: 10px;
 }
@@ -35,20 +34,55 @@ label {
   margin: 15px 15px 5px 15px;
 }
 
-textarea {
-  margin: 5px 15px 15px 15px;
+.textarea-container {
+  overflow: hidden;
   border-radius: 10px;
   height: 20vh;
   width: 25vw;
 }
 
+textarea {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000000;
+  padding: 10px 5px 10px 10px;
+  font-size: 15px;
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+#btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #send-btn {
   cursor: pointer;
-  margin: 10px 15px 10px 130px;
+  margin: 10px 15px 10px 15px;
   padding: 6px;
   border-radius: 10px;
   border: none;
   background-color: #00ff00;
+  font-size: 16px;
+  width: 140px;
+}
+
+#cancel-btn {
+  cursor: pointer;
+  margin: 10px 15px 10px 15px;
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff6666;
   font-size: 16px;
   width: 140px;
 }

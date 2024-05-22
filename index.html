@@ -12,10 +12,17 @@
     <div id="input-container">
       <form action="/submit" method="post">
         <label for="card-front">Frente do cartão:</label>
-        <textarea name="card-front" id="card-front" required></textarea>
+        <div class="textarea-container">
+          <textarea name="card-front" id="card-front" required></textarea>
+        </div>
         <label for="card-back">Verso do cartão:</label>
-        <textarea name="card-back" id="card-back"></textarea>
-        <button type="submit" id="send-btn">Criar cartão</button>
+        <div class="textarea-container">
+          <textarea name="card-back" id="card-back" required></textarea>
+        </div>
+        <div id="btn-container">
+          <button type="submit" id="send-btn">Criar cartão</button>
+          <button type="reset" id="cancel-btn">Cancelar</button>
+        </div>
       </form>
     </div>
     <script src="/src/js/script.js"></script>
