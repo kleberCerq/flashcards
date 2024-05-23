@@ -60,14 +60,27 @@ textarea::-webkit-scrollbar-thumb {
   cursor: auto;
 }
 
-#card-color {
+#card-color1 {
   cursor: pointer;
   border: 1px solid #000000;
   display: flex;
   justify-content:space-between;
   align-items: center;
   border-radius: 10px;
-  margin: 20px 0px 10px 0px;
+  margin: 20px 0px 0px 0px;
+  padding: 5px;
+  font-size: 15px;
+  background-color: #ffffff;
+}
+
+#card-color2 {
+  cursor: pointer;
+  border: 1px solid #000000;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin: 5px 0px 0px 0px;
   padding: 5px;
   font-size: 15px;
   background-color: #ffffff;
@@ -78,19 +91,26 @@ textarea::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
-#selected-color {
-  color: #ff6666;
-  border: 1px solid black;
+#selected-color1 {
+  color: #63b8ff;
+  border: 1px solid #000000;
   font-size: 15px;
-  background-color: #ff6666;
+  background-color: #63b8ff;
+}
+
+#selected-color2 {
+  color: #000000;
+  border: 1px solid #000000;
+  font-size: 15px;
+  background-color: #000000;
 }
 
 .color-selector {
   border: 1px solid #000000;
   padding: 3px;
-  margin: 10px;
+  margin: 0px 0px 10px 0px;
   display: grid;
-  grid-template-columns: repeat(20, 15px);
+  grid-template-columns: repeat(21, 15px);
   grid-template-rows: repeat(3, 15px);
   gap: 3px;
 }
@@ -111,7 +131,7 @@ textarea::-webkit-scrollbar-thumb {
   margin: 10px 15px 10px 15px;
   padding: 6px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid #000000;
   background-color: #00ff00;
   font-size: 16px;
   width: 140px;
@@ -122,7 +142,7 @@ textarea::-webkit-scrollbar-thumb {
   margin: 10px 15px 10px 15px;
   padding: 6px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid #000000;
   background-color: #ff6666;
   font-size: 16px;
   width: 140px;
